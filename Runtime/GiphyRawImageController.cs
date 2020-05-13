@@ -8,13 +8,11 @@ namespace Gameframe.Giphy
     public class GiphyRawImageController : MonoBehaviour
     {
         [SerializeField] 
-        private GiphyConfig config;
+        private GiphyConfig config = null;
         
         [SerializeField] 
         private string searchQuery = "cheeseburger";
         
-        [SerializeField] private int limit = 25;
-        [SerializeField] private int offset = 0;
         [SerializeField] private VideoPlayer videoPlayer;
         [SerializeField] private RawImage rawImage;
         [SerializeField] private bool playOnEnable = true;
@@ -117,6 +115,8 @@ namespace Gameframe.Giphy
             int width = 0;
             int height = 0;
             
+            videoPlayer.source = VideoSource.Url;
+
             if (videoPlayer.isLooping)
             {
                 videoPlayer.url = result.data.images.looping.mp4;
@@ -131,8 +131,6 @@ namespace Gameframe.Giphy
             }
             
             SetImageSize(width,height);
-            
-            
             
             videoPlayer.Play();
         }
