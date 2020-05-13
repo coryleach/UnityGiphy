@@ -72,20 +72,19 @@ namespace Gameframe.Giphy
                     {
                         var ratio = Mathf.Clamp(width / (float)height, 1f / 1000f, 1000f);
                         size.y = size.x / ratio;
-                        videoPlayer.aspectRatio = VideoAspectRatio.Stretch;
                     }
                     break;
                 case AspectRatioMode.HeightControlsWidth:
                     {
                         var ratio = Mathf.Clamp(width / (float)height, 1f / 1000f, 1000f);
                         size.x = size.y * ratio;
-                        videoPlayer.aspectRatio = VideoAspectRatio.Stretch;
                     }
                     break;
                 default:
                     throw new ArgumentOutOfRangeException();
             }
 
+            videoPlayer.aspectRatio = VideoAspectRatio.Stretch;
             rect.sizeDelta = size;
         }
 
