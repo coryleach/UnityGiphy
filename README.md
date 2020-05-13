@@ -45,8 +45,6 @@ for displaying random giphy images in your UI but example API code is also shown
 //For more info on the query results please see the following documentation
 // https://developers.giphy.com/docs/api/endpoint
 
-
-
 //Example code that loads a random image and plays it as a video
 public async void ShowRandomImage()
 {
