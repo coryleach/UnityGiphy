@@ -100,7 +100,7 @@ namespace Gameframe.Giphy
             
             if (string.IsNullOrEmpty(config.apiKey))
             {
-                Debug.LogError("Giphy ApiKey is not configured. You must create a developer app and get an API key from the giphy developer website.",this);
+                Debug.LogError("Giphy ApiKey is not configured. You must create a developer app and get an API key from the giphy developer website and add it to your GiphyConfig file.",this);
                 return;
             }
             

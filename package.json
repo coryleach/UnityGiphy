@@ -10,5 +10,6 @@
     "email": "cory.leach@gmail.com",
     "url": "https://github.com/coryleach"
   },
-  "type": "library"
+  "type": "library",
+  "hideInEditor": false
 }
