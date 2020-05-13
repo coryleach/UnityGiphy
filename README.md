@@ -13,7 +13,7 @@
 #### Using UnityPackageManager (for Unity 2019.3 or later)
 Open the package manager window (menu: Window > Package Manager)<br/>
 Select "Add package from git URL...", fill in the pop-up with the following link:<br/>
-https://github.com/coryleach/UnityGiphy.git#1.0.1<br/>
+https://github.com/coryleach/UnityGiphy.git#1.0.0<br/>
 
 #### Using UnityPackageManager (for Unity 2019.1 or later)
 
