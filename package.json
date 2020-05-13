@@ -1,0 +1,13 @@
+{
+  "name": "com.gameframe.giphy",
+  "displayName": "Gameframe.Giphy",
+  "version": "1.0.0",
+  "description": "Library for playing Giphy gifs as mp4 videos in Unity",
+  "unity": "2019.1",
+  "keywords": [],
+  "author": {
+    "name": "Cory Leach",
+    "email": "cory.leach@gmail.com",
+    "url": "https://github.com/coryleach"
+  }
+}
