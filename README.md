@@ -15,6 +15,12 @@
 
 ## Quick Package Install
 
+#### Using UnityPackageManager (for Unity 2019.3 or later)
+
+Open the package manager window (menu: Window > Package Manager)<br/>
+Select "Add package from git URL...", fill in the pop-up with the following link:<br/>
+https://github.com/coryleach/UnityGiphy.git#1.0.0<br/>
+
 #### Using OpenUPM
 
 The package is available on the [openupm registry](https://openupm.com/packages/com.gameframe.giphy/). It's recommended to install it via [openupm-cli](https://github.com/openupm/openupm-cli#openupm-cli).
@@ -22,12 +28,6 @@ The package is available on the [openupm registry](https://openupm.com/packages/
 ```
 openupm add com.littlebigfun.addressable-importer
 ```
-
-#### Using UnityPackageManager (for Unity 2019.3 or later)
-
-Open the package manager window (menu: Window > Package Manager)<br/>
-Select "Add package from git URL...", fill in the pop-up with the following link:<br/>
-https://github.com/coryleach/UnityGiphy.git#1.0.0<br/>
 
 #### Using UnityPackageManager (for Unity 2019.1 or later)
 
