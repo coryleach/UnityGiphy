@@ -26,7 +26,7 @@ https://github.com/coryleach/UnityGiphy.git#1.0.0<br/>
 The package is available on the [openupm registry](https://openupm.com/packages/com.gameframe.giphy/). It's recommended to install it via [openupm-cli](https://github.com/openupm/openupm-cli#openupm-cli).
 
 ```
-openupm add com.littlebigfun.addressable-importer
+openupm add com.gameframe.giphy
 ```
 
 #### Using UnityPackageManager (for Unity 2019.1 or later)
