@@ -2,14 +2,17 @@
   "name": "com.gameframe.giphy",
   "displayName": "Gameframe.Giphy",
   "version": "1.0.0",
-  "description": "Library for playing Giphy gifs as mp4 videos in Unity",
+  "description": "This package contains a simple implementation of the Giphy API required to display random Gif images in Unity as MP4 videos.\nThis package does not provide a means to display a gif directly but does provide urls to gif version of the images.\nInstead this package uses the mp4 links provided by giphy's api to display the gifs as movies",
   "unity": "2019.1",
   "keywords": [],
   "author": {
     "name": "Cory Leach",
     "email": "cory.leach@gmail.com",
-    "url": "https://github.com/coryleach"
+    "url": "https://github.com/coryleach",
+    "github": "coryleach",
+    "twitter": "coryleach"
   },
   "type": "library",
-  "hideInEditor": false
+  "hideInEditor": false,
+  "repositoryName": "UnityGiphy"
 }
