@@ -21,14 +21,6 @@ Open the package manager window (menu: Window > Package Manager)<br/>
 Select "Add package from git URL...", fill in the pop-up with the following link:<br/>
 https://github.com/coryleach/UnityGiphy.git#1.0.0<br/>
 
-#### Using OpenUPM
-
-The package is available on the [openupm registry](https://openupm.com/packages/com.gameframe.giphy/). It's recommended to install it via [openupm-cli](https://github.com/openupm/openupm-cli#openupm-cli).
-
-```
-openupm add com.gameframe.giphy
-```
-
 #### Using UnityPackageManager (for Unity 2019.1 or later)
 
 Find the manifest.json file in the Packages folder of your project and edit it to look like this:
@@ -40,6 +32,20 @@ Find the manifest.json file in the Packages folder of your project and edit it t
   },
 }
 ```
+
+<!-- DOC-START -->
+<!-- 
+Changes between 'DOC START' and 'DOC END' will not be modified by readme update scripts
+-->
+
+#### Using OpenUPM
+
+The package is available on the [openupm registry](https://openupm.com/packages/com.gameframe.giphy/). It's recommended to install it via [openupm-cli](https://github.com/openupm/openupm-cli#openupm-cli).
+
+```
+openupm add com.gameframe.giphy
+```
+
 
 ## Usage
 
@@ -69,6 +75,8 @@ public async void ShowRandomImage()
   videoPlayer.Play();
 }
 ```
+
+<!-- DOC-END -->
 
 ## Author
 
