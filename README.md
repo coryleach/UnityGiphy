@@ -1,25 +1,21 @@
-<h1 align="center">Welcome to com.gameframe.giphy 👋</h1>
+<h1 align="center">Gameframe.Giphy 👋</h1>
 <p>
-  <img alt="Version" src="https://img.shields.io/badge/version-1.0.0-blue.svg?cacheSeconds=2592000" />
-  <a href="https://openupm.com/packages/com.gameframe.giphy/">
-    <img src="https://img.shields.io/npm/v/com.gameframe.giphy?label=openupm&amp;registry_uri=https://package.openupm.com" />
-  </a>
-  <a href="https://twitter.com/coryleach">
+  <img alt="Version" src="https://img.shields.io/badge/version-1.0.1-blue.svg?cacheSeconds=2592000" />
+  <a href="https://twitter.com/Cory Leach">
     <img alt="Twitter: coryleach" src="https://img.shields.io/twitter/follow/coryleach.svg?style=social" target="_blank" />
   </a>
 </p>
 
-> This package contains a simple implementation of the Giphy API required to display random Gif images in Unity as MP4 videos.</br>
-> This package does not provide a means to display a gif directly but does provide urls to gif version of the images.</br>
-> Instead this package uses the mp4 links provided by giphy's api to display the gifs as movies.</br>
+This package contains a simple implementation of the Giphy API required to display random Gif images in Unity as MP4 videos.  
+This package does not provide a means to display a gif directly but does provide urls to gif version of the images.  
+Instead this package uses the mp4 links provided by giphy's api to display the gifs as movies
 
 ## Quick Package Install
 
 #### Using UnityPackageManager (for Unity 2019.3 or later)
-
 Open the package manager window (menu: Window > Package Manager)<br/>
 Select "Add package from git URL...", fill in the pop-up with the following link:<br/>
-https://github.com/coryleach/UnityGiphy.git#1.0.0<br/>
+https://github.com/coryleach/UnityGiphy.git#1.0.1<br/>
 
 #### Using UnityPackageManager (for Unity 2019.1 or later)
 
@@ -27,7 +23,7 @@ Find the manifest.json file in the Packages folder of your project and edit it t
 ```js
 {
   "dependencies": {
-    "com.gameframe.giphy": "https://github.com/coryleach/UnityGiphy.git#1.0.0",
+    "com.gameframe.giphy": "https://github.com/coryleach/UnityGiphy.git#1.0.1",
     ...
   },
 }
@@ -85,9 +81,10 @@ public async void ShowRandomImage()
 * Twitter: [@coryleach](https://twitter.com/coryleach)
 * Github: [@coryleach](https://github.com/coryleach)
 
+
 ## Show your support
 
 Give a ⭐️ if this project helped you!
 
 ***
-_This README was generated with ❤️ by [readme-md-generator](https://github.com/kefranabg/readme-md-generator)_
+_This README was generated with ❤️ by [Gameframe.Packages](https://github.com/coryleach/unitypackages)_
