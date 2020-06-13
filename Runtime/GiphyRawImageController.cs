@@ -119,7 +119,7 @@ namespace Gameframe.Giphy
                 return;
             }
             
-            if (string.IsNullOrEmpty(config.apiKey))
+            if (string.IsNullOrEmpty(config.ApiKey))
             {
                 Debug.LogError("Giphy ApiKey is not configured. You must create a developer app and get an API key from the giphy developer website and add it to your GiphyConfig file.",this);
                 return;
@@ -164,7 +164,7 @@ namespace Gameframe.Giphy
                 return;
             }
             
-            if (string.IsNullOrEmpty(config.apiKey))
+            if (string.IsNullOrEmpty(config.ApiKey))
             {
                 Debug.LogError("Giphy ApiKey is not configured. You must create a developer app and get an API key from the giphy developer website and add it to your GiphyConfig file.",this);
                 return;

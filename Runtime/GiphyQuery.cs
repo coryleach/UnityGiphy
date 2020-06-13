@@ -12,7 +12,7 @@ namespace Gameframe.Giphy
     
     public static Task<GiphyQueryRandomResult> Random(GiphyConfig config, string tag)
     {
-      var requestUrl = $"https://{randomApiUrl}?api_key={config.apiKey}&tag={UnityWebRequest.EscapeURL(tag)}&rating={config.rating.ToQueryString()}";
+      var requestUrl = $"https://{randomApiUrl}?api_key={config.ApiKey}&tag={UnityWebRequest.EscapeURL(tag)}&rating={config.Rating.ToQueryString()}";
       return Query<GiphyQueryRandomResult>(requestUrl);
     }
     
@@ -24,7 +24,7 @@ namespace Gameframe.Giphy
 
     public static Task<GiphyQuerySearchResult> Search(GiphyConfig config, string query, int limit = 25, int offset = 0)
     {
-      var requestUrl = $"https://{searchApiUrl}?api_key={config.apiKey}&q={UnityWebRequest.EscapeURL(query)}&limit={limit}&offset={offset}&rating={config.rating.ToQueryString()}&lang={config.lang}";
+      var requestUrl = $"https://{searchApiUrl}?api_key={config.ApiKey}&q={UnityWebRequest.EscapeURL(query)}&limit={limit}&offset={offset}&rating={config.Rating.ToQueryString()}&lang={config.Lang}";
       return Query<GiphyQuerySearchResult>(requestUrl);
     }
     
