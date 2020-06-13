@@ -1,7 +1,7 @@
 {
   "name": "com.gameframe.giphy",
   "displayName": "Gameframe.Giphy",
-  "version": "1.0.1",
+  "version": "2.0.0",
   "description": "This package contains a simple implementation of the Giphy API required to display random Gif images in Unity as MP4 videos.\nThis package does not provide a means to display a gif directly but does provide urls to gif version of the images.\nInstead this package uses the mp4 links provided by giphy's api to display the gifs as movies",
   "unity": "2019.1",
   "keywords": [],
