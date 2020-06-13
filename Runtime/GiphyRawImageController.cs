@@ -140,13 +140,13 @@ namespace Gameframe.Giphy
 
             if (videoPlayer.isLooping)
             {
-                videoPlayer.url = result.Data.Images.looping.mp4;
+                videoPlayer.url = result.Data.Images.Looping.Mp4;
                 width = result.Data.ImageWidth;
                 height = result.Data.ImageHeight;
             }
             else
             {
-                videoPlayer.url = result.Data.Images.original_mp4.mp4;
+                videoPlayer.url = result.Data.Images.OriginalMp4.Mp4;
                 width = result.Data.ImageWidth;
                 height = result.Data.ImageHeight;
             }
@@ -172,9 +172,9 @@ namespace Gameframe.Giphy
             
             Alpha = 0;
             var result = await GiphyQuery.Search(config, searchQuery);
-            var validResults = result.data.Where(x => !string.IsNullOrEmpty(x.images.original_mp4.mp4)).ToList();
+            var validResults = result.Data.Where(x => !string.IsNullOrEmpty(x.Images.OriginalMp4.Mp4)).ToList();
             var randomResult = validResults[UnityEngine.Random.Range(0, validResults.Count)];
-            if (string.IsNullOrEmpty(randomResult.images.original_mp4.mp4))
+            if (string.IsNullOrEmpty(randomResult.Images.OriginalMp4.Mp4))
             {
                 Debug.Log("No MP4 result");
                 return;
@@ -187,15 +187,15 @@ namespace Gameframe.Giphy
 
             if (videoPlayer.isLooping)
             {
-                videoPlayer.url = randomResult.images.looping.mp4;
-                width = randomResult.images.original.width;
-                height = randomResult.images.original.height;
+                videoPlayer.url = randomResult.Images.Looping.Mp4;
+                width = randomResult.Images.Original.Width;
+                height = randomResult.Images.Original.Height;
             }
             else
             {
-                videoPlayer.url = randomResult.images.original_mp4.mp4;
-                width = randomResult.images.original_mp4.width;
-                height = randomResult.images.original_mp4.height;
+                videoPlayer.url = randomResult.Images.OriginalMp4.Mp4;
+                width = randomResult.Images.OriginalMp4.Width;
+                height = randomResult.Images.OriginalMp4.Height;
             }
             
             SetImageSize(width,height);
