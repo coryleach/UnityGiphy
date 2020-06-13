@@ -9,7 +9,7 @@ namespace Gameframe.Giphy
     public class GiphyRawImageController : MonoBehaviour
     {
         [SerializeField] 
-        private GiphyConfig config = null;
+        private GiphyConfig config;
 
         [SerializeField] 
         private QueryType queryType = QueryType.Random;
