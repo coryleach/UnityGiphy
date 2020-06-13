@@ -3,7 +3,7 @@
 namespace Gameframe.Giphy
 {
   [CreateAssetMenu(menuName = "Gameframe/Giphy/Config")]
-  public class GiphyConfig : ScriptableObject
+  public class GiphyConfig : ScriptableObject, IGiphyConfig
   {
     [SerializeField]
     private string apiKey = "";
