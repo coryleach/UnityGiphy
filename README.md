@@ -1,10 +1,13 @@
 <h1 align="center">Gameframe.Giphy 👋</h1>
-<p>
-  <img alt="Version" src="https://img.shields.io/badge/version-1.0.1-blue.svg?cacheSeconds=2592000" />
-  <a href="https://twitter.com/Cory Leach">
-    <img alt="Twitter: coryleach" src="https://img.shields.io/twitter/follow/coryleach.svg?style=social" target="_blank" />
-  </a>
-</p>
+
+<!-- BADGE-START -->
+[![Codacy Badge](https://app.codacy.com/project/badge/Grade/d2749fdbc70f422a9d1efccb56d48bff)](https://www.codacy.com/manual/coryleach/UnityGiphy?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=coryleach/UnityGiphy&amp;utm_campaign=Badge_Grade)
+![version](https://img.shields.io/github/package-json/v/coryleach/UnityGiphy)
+[![openupm](https://img.shields.io/npm/v/com.gameframe.giphy?label=openupm&amp;registry_uri=https://package.openupm.com)](https://openupm.com/packages/com.gameframe.giphy/)
+[![license](https://img.shields.io/github/license/coryleach/UnityGiphy)](https://github.com/coryleach/UnityGiphy/blob/master/LICENSE)
+
+[![twitter](https://img.shields.io/twitter/follow/coryleach.svg?style=social)](https://twitter.com/coryleach)
+<!-- BADGE-END -->
 
 This package contains a simple implementation of the Giphy API required to display random Gif images in Unity as MP4 videos.  
 This package does not provide a means to display a gif directly but does provide urls to gif version of the images.  
@@ -15,7 +18,7 @@ Instead this package uses the mp4 links provided by giphy's api to display the g
 #### Using UnityPackageManager (for Unity 2019.3 or later)
 Open the package manager window (menu: Window > Package Manager)<br/>
 Select "Add package from git URL...", fill in the pop-up with the following link:<br/>
-https://github.com/coryleach/UnityGiphy.git#1.0.1<br/>
+https://github.com/coryleach/UnityGiphy.git#2.0.0<br/>
 
 #### Using UnityPackageManager (for Unity 2019.1 or later)
 
@@ -23,7 +26,7 @@ Find the manifest.json file in the Packages folder of your project and edit it t
 ```js
 {
   "dependencies": {
-    "com.gameframe.giphy": "https://github.com/coryleach/UnityGiphy.git#1.0.1",
+    "com.gameframe.giphy": "https://github.com/coryleach/UnityGiphy.git#2.0.0",
     ...
   },
 }

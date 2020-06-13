@@ -9,7 +9,7 @@ namespace Gameframe.Giphy
     public class GiphyRawImageController : MonoBehaviour
     {
         [SerializeField] 
-        private GiphyConfig config = null;
+        private GiphyConfig config;
 
         [SerializeField] 
         private QueryType queryType = QueryType.Random;
@@ -119,7 +119,7 @@ namespace Gameframe.Giphy
                 return;
             }
             
-            if (string.IsNullOrEmpty(config.apiKey))
+            if (string.IsNullOrEmpty(config.ApiKey))
             {
                 Debug.LogError("Giphy ApiKey is not configured. You must create a developer app and get an API key from the giphy developer website and add it to your GiphyConfig file.",this);
                 return;
@@ -127,7 +127,7 @@ namespace Gameframe.Giphy
             
             Alpha = 0;
             var result = await GiphyQuery.Random(config, searchQuery);
-            if (string.IsNullOrEmpty(result.data.image_mp4_url))
+            if (string.IsNullOrEmpty(result.Data.ImageMp4Url))
             {
                 Debug.Log("No MP4 result");
                 return;
@@ -140,15 +140,15 @@ namespace Gameframe.Giphy
 
             if (videoPlayer.isLooping)
             {
-                videoPlayer.url = result.data.images.looping.mp4;
-                width = result.data.image_width;
-                height = result.data.image_height;
+                videoPlayer.url = result.Data.Images.Looping.Mp4;
+                width = result.Data.ImageWidth;
+                height = result.Data.ImageHeight;
             }
             else
             {
-                videoPlayer.url = result.data.images.original_mp4.mp4;
-                width = result.data.image_width;
-                height = result.data.image_height;
+                videoPlayer.url = result.Data.Images.OriginalMp4.Mp4;
+                width = result.Data.ImageWidth;
+                height = result.Data.ImageHeight;
             }
             
             SetImageSize(width,height);
@@ -164,7 +164,7 @@ namespace Gameframe.Giphy
                 return;
             }
             
-            if (string.IsNullOrEmpty(config.apiKey))
+            if (string.IsNullOrEmpty(config.ApiKey))
             {
                 Debug.LogError("Giphy ApiKey is not configured. You must create a developer app and get an API key from the giphy developer website and add it to your GiphyConfig file.",this);
                 return;
@@ -172,9 +172,9 @@ namespace Gameframe.Giphy
             
             Alpha = 0;
             var result = await GiphyQuery.Search(config, searchQuery);
-            var validResults = result.data.Where(x => !string.IsNullOrEmpty(x.images.original_mp4.mp4)).ToList();
+            var validResults = result.Data.Where(x => !string.IsNullOrEmpty(x.Images.OriginalMp4.Mp4)).ToList();
             var randomResult = validResults[UnityEngine.Random.Range(0, validResults.Count)];
-            if (string.IsNullOrEmpty(randomResult.images.original_mp4.mp4))
+            if (string.IsNullOrEmpty(randomResult.Images.OriginalMp4.Mp4))
             {
                 Debug.Log("No MP4 result");
                 return;
@@ -187,15 +187,15 @@ namespace Gameframe.Giphy
 
             if (videoPlayer.isLooping)
             {
-                videoPlayer.url = randomResult.images.looping.mp4;
-                width = randomResult.images.original.width;
-                height = randomResult.images.original.height;
+                videoPlayer.url = randomResult.Images.Looping.Mp4;
+                width = randomResult.Images.Original.Width;
+                height = randomResult.Images.Original.Height;
             }
             else
             {
-                videoPlayer.url = randomResult.images.original_mp4.mp4;
-                width = randomResult.images.original_mp4.width;
-                height = randomResult.images.original_mp4.height;
+                videoPlayer.url = randomResult.Images.OriginalMp4.Mp4;
+                width = randomResult.Images.OriginalMp4.Width;
+                height = randomResult.Images.OriginalMp4.Height;
             }
             
             SetImageSize(width,height);

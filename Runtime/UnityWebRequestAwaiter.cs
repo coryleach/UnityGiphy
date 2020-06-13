@@ -7,8 +7,8 @@ namespace Gameframe.Giphy
 {
   public class UnityWebRequestAwaiter : INotifyCompletion
   {
-    private UnityWebRequestAsyncOperation asyncOp;
-    private Action continuation;
+    private readonly UnityWebRequestAsyncOperation asyncOp;
+    private Action _continuation;
 
     public UnityWebRequestAwaiter(UnityWebRequestAsyncOperation asyncOp)
     {
@@ -18,16 +18,22 @@ namespace Gameframe.Giphy
 
     public bool IsCompleted { get { return asyncOp.isDone; } }
 
-    public void GetResult() { }
+    public void GetResult()
+    {
+      do
+      {
+        //Block until operation is completed
+      } while (!IsCompleted);
+    }
 
     public void OnCompleted(Action continuation)
     {
-      this.continuation = continuation;
+      this._continuation = continuation;
     }
 
     private void OnRequestCompleted(AsyncOperation obj)
     {
-      continuation();
+      _continuation();
     }
   }
 
