@@ -1,8 +1,8 @@
 <h1 align="center">Gameframe.Giphy 👋</h1>
 
 <!-- BADGE-START -->
-[![Codacy Badge](https://app.codacy.com/project/badge/Grade/d2749fdbc70f422a9d1efccb56d48bff)](https://www.codacy.com/manual/coryleach/UnityGiphy?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=coryleach/UnityGiphy&amp;utm_campaign=Badge_Grade)
-![version](https://img.shields.io/github/package-json/v/coryleach/UnityGiphy)
+[![Codacy Badge](https://app.codacy.com/project/badge/Grade/5b5f5409ad6f4cb8aea6cd40b457a55f)](https://www.codacy.com/manual/coryleach/UnityGiphy?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=coryleach/UnityGiphy&amp;utm_campaign=Badge_Grade)
+![GitHub release (latest by date including pre-releases)](https://img.shields.io/github/v/release/coryleach/UnityGiphy?include_prereleases)
 [![openupm](https://img.shields.io/npm/v/com.gameframe.giphy?label=openupm&amp;registry_uri=https://package.openupm.com)](https://openupm.com/packages/com.gameframe.giphy/)
 [![license](https://img.shields.io/github/license/coryleach/UnityGiphy)](https://github.com/coryleach/UnityGiphy/blob/master/LICENSE)
 
