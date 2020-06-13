@@ -127,7 +127,7 @@ namespace Gameframe.Giphy
             
             Alpha = 0;
             var result = await GiphyQuery.Random(config, searchQuery);
-            if (string.IsNullOrEmpty(result.data.image_mp4_url))
+            if (string.IsNullOrEmpty(result.Data.ImageMp4Url))
             {
                 Debug.Log("No MP4 result");
                 return;
@@ -140,15 +140,15 @@ namespace Gameframe.Giphy
 
             if (videoPlayer.isLooping)
             {
-                videoPlayer.url = result.data.images.looping.mp4;
-                width = result.data.image_width;
-                height = result.data.image_height;
+                videoPlayer.url = result.Data.Images.looping.mp4;
+                width = result.Data.ImageWidth;
+                height = result.Data.ImageHeight;
             }
             else
             {
-                videoPlayer.url = result.data.images.original_mp4.mp4;
-                width = result.data.image_width;
-                height = result.data.image_height;
+                videoPlayer.url = result.Data.Images.original_mp4.mp4;
+                width = result.Data.ImageWidth;
+                height = result.Data.ImageHeight;
             }
             
             SetImageSize(width,height);
